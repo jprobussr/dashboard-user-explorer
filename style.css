@@ -58,3 +58,108 @@ body {
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+.controls-section {
+  margin-bottom: 2rem;
+}
+
+.search-wrapper {
+  width: 100%;
+}
+
+.search-wrapper label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.search-wrapper input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.95rem;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.search-wrapper input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.25);
+}
+
+.search-wrapper input::placeholder {
+  color: var(--muted);
+}
+
+.stats-section {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.stat-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.users-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.user-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.user-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.user-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.detail-section {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 700px) {
+   .dashboard-main {
+    padding: 2.5rem 0;
+   } 
+
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .users-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
