@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+        
+      <header class="dashboard-header">
+        <div class="container">
+          <h1>User Dashboard</h1>
+          <p>Browse, search, and manage user information in one place.</p>
+        </div>
+      </header>
+
+      <main class="dashboard-main">
+
+        <div class="container">
+
+          <section class="controls-section" aria-label="Dashboard controls">
+            <div class="search-wrapper">
+              <label for="searchInput" class="sr-only">Search Users</label>
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Search users by name or email"
+              />
+            </div>
+          </section>
+
+          <section class="stats-section" aria-label="Dashboard stats">
+            <div class="stat-card">
+              <h2>Total Users</h2>
+              <p id="totalUsers">0</p>
+            </div>
+
+            <div class="stat-card">
+              <h2>Showing</h2>
+              <p id="visibleUsers">0</p>
+            </div>
+          </section>
+
+          <section class="users-section" aria-label="User list">
+            <div id="usersGrid" class="users-grid"></div>
+          </section>
+
+          <section
+            class="detail-section"
+            aria-label="User details"
+            id="detailSection"
+          ></section>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
