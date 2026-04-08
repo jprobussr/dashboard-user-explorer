@@ -116,7 +116,7 @@ body {
 
 .stat-card h2 {
   margin: 0 0 0.5rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--muted);
 }
 
@@ -167,7 +167,7 @@ body {
 
 .status-message {
   background: var(--surface);
-  border: 1px dashed var(--border);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1rem;
   color: var(--muted);
