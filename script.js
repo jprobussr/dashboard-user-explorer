@@ -84,6 +84,7 @@ const renderUsers = () => {
 
     viewDetailsBtn.addEventListener('click', () => {
       selectedUser = user;
+      renderUsers();
       renderUserDetails();
     });
 
@@ -120,6 +121,16 @@ searchInput.addEventListener('input', (event) => {
   const searchTerm = event.target.value;
 
   filterUsers(searchTerm);
+
+  if (selectedUser) {
+    const stillVisible = filteredUsers.includes(selectedUser);
+
+    if (!stillVisible) {
+      selectedUser = null;
+    }
+  }
+
   renderUsers();
+  renderUserDetails();
   updateStats();
 });
